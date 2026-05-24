@@ -1,0 +1,12 @@
+arcus-site/
+│
+├── index.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── main.js
+│
+└── img/
+    └── (aqui colocas logo e imagens futuras)
