@@ -1,4 +1,4 @@
-// IntersectionObserver para animações de scroll
+// Animações de scroll
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -14,7 +14,7 @@ document
   .querySelectorAll(".hero-inner, .section, .service-item, blockquote")
   .forEach((el) => observer.observe(el));
 
-// Nav que encolhe ao fazer scroll
+// Nav dinâmica
 const nav = document.querySelector(".nav");
 
 window.addEventListener("scroll", () => {
@@ -24,5 +24,3 @@ window.addEventListener("scroll", () => {
     nav.classList.remove("nav-small");
   }
 });
-
-console.log("ARCUS GIMM-style site loaded");
