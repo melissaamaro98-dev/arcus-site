@@ -6,13 +6,13 @@
 }
 
 body {
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #05030a;
+  font-family: "Inter", sans-serif;
+  background: #0a0612;
   color: #f7f3ff;
   line-height: 1.5;
 }
 
-/* NAV “VIDRO” ESTILO GIMM */
+/* NAV COM LOGO */
 .nav {
   position: fixed;
   top: 0;
@@ -21,7 +21,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(5, 3, 20, 0.7);
+  background: rgba(20, 10, 40, 0.6);
   backdrop-filter: blur(18px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   z-index: 1000;
@@ -30,19 +30,19 @@ body {
 
 .nav-small {
   padding: 10px 10%;
-  background: rgba(5, 3, 20, 0.9);
+  background: rgba(20, 10, 40, 0.9);
 }
 
-.nav-logo {
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+.nav-logo img {
+  height: 38px;
+  width: auto;
+  filter: brightness(1.2);
 }
 
 .nav-links a {
   margin-left: 26px;
   font-size: 14px;
-  color: #e4ddff;
+  color: #e8c6ff;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -50,59 +50,26 @@ body {
 }
 
 .nav-links a:hover {
-  color: #ffcf70;
+  color: #b38bff;
 }
 
-/* HERO COLORIDO ESTILO GIMM */
+/* HERO LILÁS ESTILO GIMM */
 .hero-arcus {
   min-height: 100vh;
-  padding: 140px 10% 120px;
+  padding: 160px 10% 140px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: left;
-  background: radial-gradient(circle at top left, #ffcf70 0, #f26a8a 25%, #6a0f1c 55%, #05030a 100%);
-  color: #fff;
+  background: radial-gradient(circle at top left, #b38bff 0%, #7a3bd1 35%, #4b1f7a 70%, #0a0612 100%);
   position: relative;
   overflow: hidden;
 }
 
-/* “brilhos” decorativos */
-.hero-arcus::before,
-.hero-arcus::after {
-  content: "";
-  position: absolute;
-  border-radius: 999px;
-  filter: blur(60px);
-  opacity: 0.6;
-}
-
-.hero-arcus::before {
-  width: 320px;
-  height: 320px;
-  background: #ffcf70;
-  top: -80px;
-  right: 10%;
-}
-
-.hero-arcus::after {
-  width: 260px;
-  height: 260px;
-  background: #f26a8a;
-  bottom: -60px;
-  left: 5%;
-}
-
 .hero-inner {
-  max-width: 780px;
+  max-width: 760px;
   position: relative;
   z-index: 1;
-}
-
-.hero-logo {
-  width: 200px;
-  margin-bottom: 40px;
-  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.4));
 }
 
 .hero-title {
@@ -116,44 +83,37 @@ body {
 .hero-subtitle {
   font-size: 20px;
   max-width: 520px;
-  color: #fbefff;
+  color: #f7eaff;
   margin-bottom: 40px;
 }
 
-/* Botões estilo agência */
 .hero-btn {
   display: inline-flex;
   align-items: center;
   gap: 10px;
   padding: 14px 28px;
-  background: #05030a;
-  color: #ffcf70;
+  background: #0a0612;
+  color: #b38bff;
   border-radius: 999px;
   font-size: 15px;
   font-weight: 500;
   text-decoration: none;
-  border: 1px solid rgba(255, 207, 112, 0.4);
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(179, 139, 255, 0.4);
   transition: 0.25s ease;
-}
-
-.hero-btn::after {
-  content: "↗";
-  font-size: 14px;
 }
 
 .hero-btn:hover {
   transform: translateY(-3px);
-  background: #ffcf70;
-  color: #05030a;
+  background: #b38bff;
+  color: #0a0612;
 }
 
-/* SECÇÕES GERAIS */
+/* SECÇÕES */
 .section {
   padding: 140px 10%;
   max-width: 1040px;
   margin: 0 auto;
-  position: relative;
+  text-align: center;
 }
 
 .section h2 {
@@ -161,15 +121,15 @@ body {
   margin-bottom: 32px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #ffcf70;
+  color: #b38bff;
 }
 
 .section p {
   font-size: 18px;
-  color: #e4ddff;
+  color: #e8c6ff;
 }
 
-/* SERVIÇOS — CARDS COLORIDOS */
+/* SERVIÇOS */
 .service-list {
   display: grid;
   gap: 28px;
@@ -179,16 +139,15 @@ body {
 .service-item {
   padding: 32px;
   border-radius: 18px;
-  background: radial-gradient(circle at top left, rgba(255, 207, 112, 0.12), rgba(10, 6, 30, 0.98));
+  background: radial-gradient(circle at top left, rgba(179, 139, 255, 0.12), rgba(10, 6, 18, 0.98));
   border: 1px solid rgba(255, 255, 255, 0.06);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
   transition: 0.25s ease;
-  transform-origin: center;
 }
 
 .service-item:hover {
   transform: translateY(-6px) scale(1.01);
-  border-color: rgba(255, 207, 112, 0.6);
+  border-color: rgba(179, 139, 255, 0.6);
 }
 
 .service-item h3 {
@@ -199,7 +158,7 @@ body {
 
 .service-item p {
   font-size: 16px;
-  color: #e4ddff;
+  color: #e8c6ff;
 }
 
 /* TESTEMUNHOS */
@@ -207,7 +166,7 @@ blockquote {
   font-size: 20px;
   margin: 24px 0;
   padding-left: 18px;
-  border-left: 3px solid #ffcf70;
+  border-left: 3px solid #b38bff;
   color: #f7f3ff;
 }
 
@@ -217,37 +176,32 @@ blockquote {
   align-items: center;
   gap: 8px;
   padding: 14px 26px;
-  background: #ffcf70;
-  color: #05030a;
+  background: #b38bff;
+  color: #0a0612;
   border-radius: 999px;
   font-size: 15px;
   font-weight: 500;
   text-decoration: none;
-  border: 1px solid rgba(255, 207, 112, 0.7);
+  border: 1px solid rgba(179, 139, 255, 0.7);
   transition: 0.25s ease;
 }
 
-.btn::after {
-  content: "→";
-  font-size: 14px;
-}
-
 .btn:hover {
-  background: #05030a;
-  color: #ffcf70;
+  background: #0a0612;
+  color: #b38bff;
 }
 
 /* FOOTER */
 .footer {
   text-align: center;
   padding: 40px 10%;
-  background: #05030a;
+  background: #0a0612;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  color: #b8b0e6;
+  color: #b8a6e6;
   font-size: 14px;
 }
 
-/* ANIMAÇÕES DE SCROLL */
+/* ANIMAÇÕES */
 .hero-inner,
 .section,
 .service-item,
@@ -260,28 +214,4 @@ blockquote {
 .visible {
   opacity: 1;
   transform: translateY(0);
-}
-
-/* RESPONSIVO */
-@media (max-width: 768px) {
-  .nav {
-    padding: 14px 6%;
-  }
-
-  .hero-arcus {
-    padding: 140px 8% 120px;
-    text-align: left;
-  }
-
-  .hero-title {
-    font-size: 40px;
-  }
-
-  .hero-logo {
-    width: 160px;
-  }
-
-  .section {
-    padding: 100px 8%;
-  }
 }
