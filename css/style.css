@@ -1,110 +1,170 @@
-:root {
-  --bordeaux: #7b1f3b;
-  --bordeaux-light: #a84b67;
-  --rose-soft: #f7e8ee;
-  --white: #ffffff;
-  --text-dark: #2a2a2a;
-  --text-muted: #6a6a6a;
-  --radius: 18px;
-  --shadow: 0 18px 40px rgba(0,0,0,0.08);
-}
+/* ------------------ */
+/* BASE */
+/* ------------------ */
 
 body {
   margin: 0;
-  font-family: "Arial", sans-serif;
-  background: var(--rose-soft);
-  color: var(--text-dark);
+  font-family: "Inter", sans-serif;
+  color: #111;
+  background: #fff;
 }
 
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.section {
+  padding: 120px 10%;
+}
+
+/* ------------------ */
 /* NAV */
+/* ------------------ */
+
 .nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 25px 10%;
   display: flex;
   justify-content: space-between;
-  padding: 20px 40px;
-  background: var(--white);
-  box-shadow: var(--shadow);
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  align-items: center;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  transition: 0.3s ease;
+}
+
+.nav-small {
+  padding: 12px 10%;
+  background: rgba(255,255,255,0.9);
 }
 
 .nav-logo {
   font-size: 22px;
-  font-weight: bold;
-  letter-spacing: 0.25em;
-  color: var(--bordeaux);
+  font-weight: 700;
+  color: #6a0f1c; /* Bordeaux ARCUS */
 }
 
 .nav-links a {
-  margin-left: 20px;
+  margin-left: 25px;
   text-decoration: none;
-  color: var(--bordeaux-light);
-  font-weight: bold;
+  color: #111;
+  font-size: 15px;
+  transition: 0.3s;
 }
 
-/* HEADER */
-.header {
-  background: linear-gradient(135deg, var(--bordeaux), var(--bordeaux-light));
-  padding: 120px 40px;
-  color: var(--white);
-  text-align: center;
+.nav-links a:hover {
+  color: #6a0f1c;
 }
 
-.header h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
+/* ------------------ */
+/* HERO */
+/* ------------------ */
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  background: #faf7f8;
 }
 
-.header p {
-  font-size: 18px;
+.hero-content {
   max-width: 600px;
-  margin: auto;
+}
+
+.hero h1 {
+  font-size: 60px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
 }
 
 .btn {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background: var(--white);
-  color: var(--bordeaux);
-  border-radius: 999px;
+  padding: 14px 28px;
+  background: #6a0f1c;
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
-  box-shadow: var(--shadow);
+  border-radius: 6px;
+  transition: 0.3s;
 }
 
-/* SECTIONS */
-.section {
-  padding: 80px 40px;
-  text-align: center;
+.btn:hover {
+  background: #4d0b15;
+  transform: translateY(-3px);
 }
 
-.section h2 {
-  font-size: 28px;
-  color: var(--bordeaux);
-  margin-bottom: 20px;
+/* ------------------ */
+/* TWO COLUMNS */
+/* ------------------ */
+
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
 }
 
-/* CARDS */
-.cards {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+/* ------------------ */
+/* SERVIÇOS */
+/* ------------------ */
+
+.service-list {
+  display: grid;
+  gap: 40px;
 }
 
-.card {
-  background: var(--white);
-  padding: 30px;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  width: 260px;
+.service-item {
+  padding: 40px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  transition: 0.3s;
 }
 
+.service-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* ------------------ */
+/* TESTEMUNHOS */
+/* ------------------ */
+
+blockquote {
+  font-size: 22px;
+  margin: 30px 0;
+  padding-left: 20px;
+  border-left: 4px solid #6a0f1c;
+}
+
+/* ------------------ */
 /* FOOTER */
+/* ------------------ */
+
 .footer {
   text-align: center;
-  padding: 20px;
-  color: var(--text-muted);
+  padding: 40px;
+  background: #6a0f1c;
+  color: #fff;
 }
 
+/* ------------------ */
+/* ANIMAÇÕES */
+/* ------------------ */
+
+.section, .hero-content, .service-item, blockquote {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.9s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
