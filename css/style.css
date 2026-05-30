@@ -1,7 +1,4 @@
-/* ------------------------------------------------------ */
-/* BASE GERAL — estilo GIMM                               */
-/* ------------------------------------------------------ */
-
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -10,220 +7,77 @@
 
 body {
   font-family: "Inter", sans-serif;
-  color: #111;
   background: #ffffff;
+  color: #111;
   line-height: 1.5;
 }
 
-h1, h2, h3 {
-  font-weight: 600;
-  color: #111;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* ------------------------------------------------------ */
-/* NAV — minimalista, fino, elegante                      */
-/* ------------------------------------------------------ */
-
+/* NAV */
 .nav {
-  position: fixed;
-  top: 0;
   width: 100%;
-  padding: 22px 10%;
+  padding: 24px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255,255,255,0.7);
-  backdrop-filter: blur(12px);
-  z-index: 1000;
-  transition: 0.3s ease;
-}
-
-.nav-small {
-  padding: 12px 10%;
-  background: rgba(255,255,255,0.9);
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .nav-logo {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
-  letter-spacing: 1px;
 }
 
 .nav-links a {
   margin-left: 28px;
   font-size: 15px;
   color: #333;
-  transition: 0.3s ease;
+  text-decoration: none;
 }
 
 .nav-links a:hover {
   color: #6a0f1c;
 }
 
-/* ------------------------------------------------------ */
-/* HERO ARCUS — minimalista, editorial, estilo GIMM       */
-/* ------------------------------------------------------ */
-
+/* HERO ARCUS MINIMALISTA */
 .hero-arcus {
   background: #ffffff;
-  padding: 200px 10% 180px;
+  padding: 160px 10% 140px;
   display: flex;
   align-items: center;
 }
 
 .hero-inner {
-  max-width: 760px;
+  max-width: 700px;
 }
 
 .hero-logo {
-  width: 200px;
-  margin-bottom: 50px;
+  width: 180px;
+  margin-bottom: 40px;
 }
 
 .hero-title {
-  font-size: 72px;
+  font-size: 56px;
   font-weight: 600;
-  line-height: 1.05;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  color: #111;
 }
 
 .hero-subtitle {
-  font-size: 24px;
-  line-height: 1.5;
-  max-width: 600px;
-  margin-bottom: 50px;
+  font-size: 20px;
   color: #444;
+  margin-bottom: 40px;
+  max-width: 520px;
 }
 
 .hero-btn {
   display: inline-block;
-  padding: 18px 36px;
+  padding: 14px 28px;
   background: #6a0f1c;
   color: #fff;
   border-radius: 6px;
-  font-size: 18px;
-  transition: 0.3s ease;
-}
-
-.hero-btn:hover {
-  background: #4d0b15;
-  transform: translateY(-3px);
-}
-
-/* ------------------------------------------------------ */
-/* SECÇÕES — muito espaço, estilo GIMM                    */
-/* ------------------------------------------------------ */
-
-.section {
-  padding: 160px 10%;
-}
-
-.section h2 {
-  font-size: 42px;
-  margin-bottom: 50px;
-}
-
-/* ------------------------------------------------------ */
-/* SOBRE — grelha editorial                               */
-/* ------------------------------------------------------ */
-
-.two-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-}
-
-.two-columns p {
-  font-size: 20px;
-  color: #444;
-}
-
-/* ------------------------------------------------------ */
-/* SERVIÇOS — cards horizontais premium                   */
-/* ------------------------------------------------------ */
-
-.service-list {
-  display: grid;
-  gap: 40px;
-}
-
-.service-item {
-  padding: 50px;
-  border: 1px solid #eee;
-  border-radius: 14px;
-  transition: 0.3s ease;
-  background: #fff;
-}
-
-.service-item:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-}
-
-.service-item h3 {
-  font-size: 26px;
-  margin-bottom: 12px;
-}
-
-.service-item p {
-  font-size: 18px;
-  color: #555;
-}
-
-/* ------------------------------------------------------ */
-/* TESTEMUNHOS — editorial, minimalista                   */
-/* ------------------------------------------------------ */
-
-blockquote {
-  font-size: 24px;
-  margin: 40px 0;
-  padding-left: 20px;
-  border-left: 4px solid #6a0f1c;
-  color: #333;
-}
-
-/* ------------------------------------------------------ */
-/* CONTACTO                                                */
-/* ------------------------------------------------------ */
-
-.btn {
-  display: inline-block;
-  padding: 16px 32px;
-  background: #6a0f1c;
-  color: #fff;
-  border-radius: 6px;
-  font-size: 18px;
-  transition: 0.3s ease;
-}
-
-.btn:hover {
-  background: #4d0b15;
-  transform: translateY(-3px);
-}
-
-/* ------------------------------------------------------ */
-/* FOOTER                                                  */
-/* ------------------------------------------------------ */
-
-.footer {
-  text-align: center;
-  padding: 60px;
-  background: #6a0f1c;
-  color: #fff;
   font-size: 16px;
-}
-
-/* ------------------------------------------------------ */
-/* ANIMAÇÕES SUAVES — estilo agência                      */
-/* ------------------------------------------------------ */
-
-.section, 
-.hero-inner, 
-.service-item, 
-blockquote {
-  opacity
+  text-decoration: none
