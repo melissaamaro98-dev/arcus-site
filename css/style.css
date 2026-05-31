@@ -40,7 +40,7 @@ body {
   font-size: 28px;
   font-weight: 700;
   letter-spacing: 0.08em;
-  color: #b38bff;
+  color: #f7f3ff;
   text-transform: uppercase;
 }
 
@@ -72,7 +72,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: left;
-  background: radial-gradient(circle at top left, #b38bff 0%, #7a3bd1 35%, #4b1f7a 70%, #0a0612 100%);
+  background: radial-gradient(circle at top left, #c9a3e0 0%, #9d5dc9 35%, #7a3bd1 70%, #0a0612 100%);
   position: relative;
   overflow: hidden;
 }
@@ -84,11 +84,13 @@ body {
 }
 
 .hero-title {
+  font-family: "Playfair Display", serif;
   font-size: 64px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.04em;
   line-height: 1.05;
   margin-bottom: 24px;
+  color: #f7f3ff;
 }
 
 .hero-subtitle {
@@ -128,7 +130,9 @@ body {
 }
 
 .section h2 {
+  font-family: "Playfair Display", serif;
   font-size: 36px;
+  font-weight: 700;
   margin-bottom: 32px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
