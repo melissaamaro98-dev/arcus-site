@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
 /* RESET */
 * {
   margin: 0;
@@ -31,6 +33,15 @@ body {
 .nav-small {
   padding: 10px 10%;
   background: rgba(20, 10, 40, 0.9);
+}
+
+.nav-logo {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .nav-logo img {
