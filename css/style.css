@@ -9,9 +9,10 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background: #0a0612;
+  background: linear-gradient(135deg, #9d5dc9 0%, #7a3bd1 50%, #0a0612 100%);
   color: #f7f3ff;
   line-height: 1.5;
+  min-height: 100vh;
 }
 
 /* NAV COM LOGO */
@@ -354,7 +355,7 @@ blockquote {
 .footer {
   text-align: center;
   padding: 40px 10%;
-  background: #0a0612;
+  background: linear-gradient(135deg, #7a3bd1 0%, #5a2b9f 100%);
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   color: #b8a6e6;
   font-size: 14px;
