@@ -52,17 +52,17 @@
     <h2>Serviços</h2>
 
     <div class="service-list">
-      <div class="service-item">
+      <div class="service-item" data-service="essencial">
         <h3>ARCUS Essencial</h3>
         <p>Revisão + formatação profissional.</p>
       </div>
 
-      <div class="service-item">
+      <div class="service-item" data-service="premium">
         <h3>ARCUS Premium</h3>
         <p>Reescrita completa + design premium.</p>
       </div>
 
-      <div class="service-item">
+      <div class="service-item" data-service="pro">
         <h3>ARCUS Pro</h3>
         <p>CV + Carta de Motivação + LinkedIn.</p>
       </div>
@@ -94,6 +94,14 @@
   <footer class="footer">
     ARCUS — onde a tua história encontra a tua próxima oportunidade
   </footer>
+
+  <!-- MODAL DE SERVIÇOS -->
+  <div id="service-modal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
 
 </body>
 </html>
