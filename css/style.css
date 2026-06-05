@@ -9,10 +9,9 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background: linear-gradient(135deg, #9d5dc9 0%, #7a3bd1 50%, #0a0612 100%);
+  background: #0a0612;
   color: #f7f3ff;
   line-height: 1.5;
-  min-height: 100vh;
 }
 
 /* NAV COM LOGO */
@@ -169,7 +168,27 @@ body {
   text-align: center;
 }
 
+.service-page {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.service-section {
+  padding: 140px 10%;
+  text-align: center;
+}
+
 .section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #b38bff;
+}
+
+.service-section h2 {
   font-family: "Playfair Display", serif;
   font-size: 36px;
   font-weight: 700;
@@ -184,11 +203,43 @@ body {
   color: #e8c6ff;
 }
 
+.service-section p {
+  font-size: 18px;
+  color: #e8c6ff;
+}
+
 /* SERVIÇOS */
 .service-list {
   display: grid;
   gap: 28px;
   margin-top: 20px;
+}
+
+.service-content-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  text-align: center;
+}
+
+.service-content-list li {
+  font-size: 16px;
+  color: #d9c8e8;
+  margin-bottom: 16px;
+  line-height: 1.8;
+  padding-left: 24px;
+  position: relative;
+  display: inline-block;
+  max-width: 600px;
+}
+
+.service-content-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #b38bff;
+  font-weight: bold;
 }
 
 .service-link {
@@ -222,38 +273,11 @@ body {
   color: #e8c6ff;
 }
 
-/* PÁGINA DE SERVIÇO - LISTA DE CONTEÚDO */
-.service-content-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: block;
-  text-align: center;
-}
-
-.service-content-list li {
-  font-size: 16px;
-  color: #d9c8e8;
-  margin-bottom: 16px;
-  line-height: 1.8;
-  padding-left: 24px;
-  position: relative;
-  display: inline-block;
-  max-width: 600px;
-}
-
-.service-content-list li::before {
-  content: "→";
-  position: absolute;
-  left: 0;
-  color: #b38bff;
-  font-weight: bold;
-}
-
 .price-highlight-section {
   background: radial-gradient(circle at top left, rgba(179, 139, 255, 0.12), rgba(10, 6, 18, 0.98));
   border-radius: 18px;
   border: 1px solid rgba(179, 139, 255, 0.3);
+  padding: 40px;
 }
 
 .price-box {
@@ -311,7 +335,6 @@ blockquote {
   text-decoration: none;
   border: 1px solid rgba(179, 139, 255, 0.7);
   transition: 0.25s ease;
-  margin-top: 24px;
 }
 
 .btn:hover {
@@ -323,7 +346,7 @@ blockquote {
 .footer {
   text-align: center;
   padding: 40px 10%;
-  background: linear-gradient(135deg, #7a3bd1 0%, #5a2b9f 100%);
+  background: #0a0612;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   color: #b8a6e6;
   font-size: 14px;
@@ -344,152 +367,6 @@ blockquote {
   transform: translateY(0);
 }
 
-/* MODAL */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 2000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  overflow: auto;
-  animation: fadeIn 0.3s ease;
-}
-
-.modal.active {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.modal-content {
-  background: linear-gradient(135deg, rgba(20, 10, 40, 0.95) 0%, rgba(50, 20, 70, 0.95) 100%);
-  padding: 60px 40px;
-  border-radius: 20px;
-  max-width: 700px;
-  width: 90%;
-  border: 1px solid rgba(179, 139, 255, 0.3);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
-  position: relative;
-  animation: slideUp 0.4s ease;
-}
-
-@keyframes slideUp {
-  from {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.modal-close {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  font-size: 32px;
-  font-weight: bold;
-  color: #b38bff;
-  background: none;
-  border: none;
-  cursor: pointer;
-  transition: 0.2s ease;
-  padding: 0;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-close:hover {
-  color: #f7f3ff;
-  transform: scale(1.1);
-}
-
-#modal-body h2 {
-  font-family: "Playfair Display", serif;
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 24px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #b38bff;
-  text-align: left;
-}
-
-#modal-body h3 {
-  font-size: 18px;
-  color: #e8c6ff;
-  margin-top: 24px;
-  margin-bottom: 12px;
-  text-align: left;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-
-#modal-body p {
-  font-size: 16px;
-  color: #d9c8e8;
-  line-height: 1.8;
-  text-align: left;
-  margin-bottom: 12px;
-}
-
-#modal-body ul {
-  font-size: 16px;
-  color: #d9c8e8;
-  line-height: 1.8;
-  text-align: left;
-  margin-left: 20px;
-  margin-bottom: 16px;
-}
-
-#modal-body ul li {
-  margin-bottom: 8px;
-}
-
-.price-highlight {
-  color: #b38bff;
-  font-weight: 600;
-  font-size: 18px;
-}
-
-.modal-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 14px 26px;
-  background: #b38bff;
-  color: #0a0612;
-  border-radius: 999px;
-  font-size: 15px;
-  font-weight: 500;
-  text-decoration: none;
-  border: 1px solid rgba(179, 139, 255, 0.7);
-  transition: 0.25s ease;
-  margin-top: 24px;
-}
-
-.modal-btn:hover {
-  background: #0a0612;
-  color: #b38bff;
-}
-
 /* RESPONSIVO */
 @media (max-width: 768px) {
   .hero-title,
@@ -497,12 +374,8 @@ blockquote {
     font-size: 42px;
   }
 
-  .section {
+  .section,
+  .service-section {
     padding: 80px 10%;
-  }
-
-  .modal-content {
-    padding: 40px 24px;
-    width: 95%;
   }
 }
