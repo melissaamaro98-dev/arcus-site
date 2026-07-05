@@ -30,3 +30,13 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* overrides: reduzir espaçamento do hero e aumentar tamanho do título */
+.hero-service {
+  padding: 120px 10% 60px;
+}
+
+.service-title {
+  font-size: 64px;
+  color: #ffffff;
+}
