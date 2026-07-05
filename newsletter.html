@@ -4,7 +4,40 @@
   <meta charset="UTF-8">
   <title>ARCUS — Newsletter #01</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Inline CSS crítico para garantir render no GitHub blob */
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Crimson+Text:wght@400;600&display=swap');
+    :root{--bg:#0a0612;--muted:#e8c6ff;--accent:#b38bff}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;background:var(--bg);color:#f7f3ff;line-height:1.6}
+
+    .nav{position:fixed;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:18px 10%;background:rgba(20,10,40,0.6);backdrop-filter:blur(12px);z-index:1000;border-bottom:1px solid rgba(255,255,255,0.04)}
+    .nav-logo{font-family:'Crimson Text',serif;font-size:36px;color:#fff;letter-spacing:.12em;text-transform:uppercase}
+    .nav-links a{margin-left:26px;font-size:14px;color:var(--muted);text-decoration:none;text-transform:uppercase;letter-spacing:.12em}
+    .nav-links a.active{color:#ffffff;font-weight:700}
+
+    .hero-service{min-height:60vh;padding:100px 10% 60px;display:flex;align-items:center;justify-content:center;text-align:center;background:radial-gradient(circle at top left,#c9a3e0 0%,#9d5dc9 35%,#7a3bd1 70%,#0a0612 100%);position:relative;overflow:hidden}
+    .hero-inner{max-width:760px}
+    .service-title{font-family:'Playfair Display',serif;font-size:72px;margin:0 0 8px;color:#fff;line-height:1.02}
+    .service-subtitle{font-size:18px;color:#f7eaff;margin:0}
+
+    .service-page{max-width:1040px;margin:0 auto;padding-top:40px}
+    .service-section{padding:40px 10%;text-align:center}
+    .service-section p{font-size:18px;color:var(--muted);max-width:880px;margin:0 auto 18px}
+
+    .service-list{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin:28px 0}
+    .service-item{padding:24px;border-radius:14px;background:radial-gradient(circle at top left,rgba(179,139,255,0.08),rgba(10,6,18,0.95));border:1px solid rgba(255,255,255,0.04);box-shadow:0 16px 36px rgba(0,0,0,0.35)}
+    .service-item h3{margin:0 0 8px;font-size:20px;color:#fff;font-family:'Playfair Display',serif}
+    .service-item p{margin:0;color:var(--muted)}
+
+    .newsletter-points{max-width:680px;margin:18px auto}
+    .newsletter-points p{margin:8px 0;color:var(--muted)}
+
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;background:var(--accent);color:#0a0612;border-radius:999px;text-decoration:none;font-weight:600}
+    .footer{padding:40px 10%;text-align:center;color:#b8a6e6;background:var(--bg);border-top:1px solid rgba(255,255,255,0.04)}
+
+    @media(max-width:880px){.service-list{grid-template-columns:1fr}.service-title{font-size:42px}.hero-service{padding:80px 6% 40px}}
+  </style>
 </head>
 
 <body>
@@ -36,27 +69,35 @@
 
       <h3>Os 4 Perfis Profissionais ARCUS</h3>
 
-      <p>1. Estratega<br>
-      Visão macro, pensamento crítico e foco em resultados.<br>
-      Transforma dados em direção e decisões.</p>
+      <div class="service-list">
+        <div class="service-item">
+          <h3>1. Estratega</h3>
+          <p>Visão macro, pensamento crítico e foco em resultados. Transforma dados em direção e decisões.</p>
+        </div>
 
-      <p>2. Conector<br>
-      Empatia, comunicação e influência.<br>
-      Cria pontes, facilita processos e eleva a experiência humana.</p>
+        <div class="service-item">
+          <h3>2. Conector</h3>
+          <p>Empatia, comunicação e influência. Cria pontes, facilita processos e eleva a experiência humana.</p>
+        </div>
 
-      <p>3. Criador<br>
-      Inovação, intuição e construção.<br>
-      Desenha soluções, experiências e ferramentas originais.</p>
+        <div class="service-item">
+          <h3>3. Criador</h3>
+          <p>Inovação, intuição e construção. Desenha soluções, experiências e ferramentas originais.</p>
+        </div>
 
-      <p>4. Operador<br>
-      Rigor, consistência e execução.<br>
-      Garante estabilidade, eficiência e processos que funcionam.</p>
+        <div class="service-item">
+          <h3>4. Operador</h3>
+          <p>Rigor, consistência e execução. Garante estabilidade, eficiência e processos que funcionam.</p>
+        </div>
+      </div>
 
       <h3>Descobrir meu perfil ARCUS:</h3>
       <p>Reflete sobre:</p>
-      <p>- O que te dá energia no trabalho</p>
-      <p>- Onde tens resultados mais consistentes</p>
-      <p>- Como resolves problemas naturalmente</p>
+      <div class="newsletter-points">
+        <p>- O que te dá energia no trabalho</p>
+        <p>- Onde tens resultados mais consistentes</p>
+        <p>- Como resolves problemas naturalmente</p>
+      </div>
 
       <p>A ARCUS nasce para apoiar a construção de narrativas profissionais sólidas, elegantes e estratégicas. Esta primeira edição abre caminho para uma série dedicada à tua evolução.</p>
 
