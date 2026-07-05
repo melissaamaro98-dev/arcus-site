@@ -182,3 +182,10 @@ blockquote {
   .nav .nav-links a { display: inline-block; margin-left: 0.6rem; font-size: 0.95rem; }
   .hero-inner { padding: 3rem 1rem; }
 }
+
+/* Fallback: garantir que o conteúdo fica visível caso o JavaScript não carregue/executar */
+/* Esta regra é intencionalmente colocada no final para ter prioridade no caso de falha do JS */
+.hero-inner, .section, .service-item, blockquote {
+  opacity: 1 !important;
+  transform: none !important;
+}
