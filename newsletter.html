@@ -5,96 +5,102 @@
   <title>ARCUS — Newsletter #01</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/newsletter.css">
+  <script defer src="js/main.js"></script>
 </head>
 
 <body>
 
+  <!-- NAV COM LOGO -->
   <nav class="nav">
-    <div class="nav-logo">ARCUS</div>
+    <div class="nav-logo">
+      ARCUS
+    </div>
     <div class="nav-links">
+      <a href="index.html">Home</a>
       <a href="index.html#sobre">Sobre</a>
       <a href="index.html#servicos">Serviços</a>
-      <a href="index.html#testemunhos">Testemunhos</a>
       <a href="index.html#contacto">Contacto</a>
-      <a href="newsletter.html" class="active">Newsletter</a>
     </div>
   </nav>
 
-  <header class="hero-service">
+  <!-- HERO NEWSLETTER -->
+  <header class="hero-newsletter">
     <div class="hero-inner">
-      <h1 class="service-title">ARCUS — Newsletter #01</h1>
-      <p class="service-subtitle">Perfis Profissionais &amp; Dicas de CV para 2026</p>
+      <h1>ARCUS — Newsletter #01</h1>
+      <p class="newsletter-subtitle">Clareza. Direção. Impacto.</p>
     </div>
   </header>
 
-  <main class="service-page">
-    <section class="service-section">
+  <!-- CONTEÚDO NEWSLETTER -->
+  <section class="newsletter-content">
+    <article class="newsletter-article">
+      <p class="newsletter-intro">
+        A ARCUS inicia a sua primeira edição com foco em dois pilares essenciais da evolução profissional: identificar o teu perfil e elevar o teu CV com clareza, direção e impacto. Esta edição apresenta os quatro perfis ARCUS e as práticas fundamentais para construir um CV sólido e competitivo.
+      </p>
 
-      <p>A ARCUS inicia a sua primeira edição com foco em dois pilares essenciais da evolução profissional: identificar o teu perfil e elevar o teu CV com clareza, direção e impacto.</p>
+      <h2>Os 4 Perfis Profissionais ARCUS</h2>
 
-      <p>Esta edição apresenta os quatro perfis ARCUS e as práticas fundamentais para construir um CV sólido e competitivo.</p>
-
-      <h3>Os 4 Perfis Profissionais ARCUS</h3>
-
-      <div class="service-list">
-        <div class="service-item">
-          <h3>1. Estratega</h3>
-          <p>Visão macro, pensamento crítico e foco em resultados. Transforma dados em direção e decisões.</p>
+      <div class="profiles-grid">
+        <div class="profile-card">
+          <div class="profile-number">1</div>
+          <h3>Estratega</h3>
+          <p><strong>Visão macro, pensamento crítico e foco em resultados.</strong></p>
+          <p>Transforma dados em direção e decisões.</p>
         </div>
 
-        <div class="service-item">
-          <h3>2. Conector</h3>
-          <p>Empatia, comunicação e influência. Cria pontes, facilita processos e eleva a experiência humana.</p>
+        <div class="profile-card">
+          <div class="profile-number">2</div>
+          <h3>Conector</h3>
+          <p><strong>Empatia, comunicação e influência.</strong></p>
+          <p>Cria pontes, facilita processos e eleva a experiência humana.</p>
         </div>
 
-        <div class="service-item">
-          <h3>3. Criador</h3>
-          <p>Inovação, intuição e construção. Desenha soluções, experiências e ferramentas originais.</p>
+        <div class="profile-card">
+          <div class="profile-number">3</div>
+          <h3>Criador</h3>
+          <p><strong>Inovação, intuição e construção.</strong></p>
+          <p>Desenha soluções, experiências e ferramentas originais.</p>
         </div>
 
-        <div class="service-item">
-          <h3>4. Operador</h3>
-          <p>Rigor, consistência e execução. Garante estabilidade, eficiência e processos que funcionam.</p>
+        <div class="profile-card">
+          <div class="profile-number">4</div>
+          <h3>Operador</h3>
+          <p><strong>Rigor, consistência e execução.</strong></p>
+          <p>Garante estabilidade, eficiência e processos que funcionam.</p>
         </div>
       </div>
 
-      <h3>Descobrir meu perfil ARCUS:</h3>
-      <p>Reflete sobre:</p>
-      <div class="newsletter-points">
-        <p>- O que te dá energia no trabalho</p>
-        <p>- Onde tens resultados mais consistentes</p>
-        <p>- Como resolves problemas naturalmente</p>
+      <div class="discovery-section">
+        <h2>Descobrir meu perfil ARCUS</h2>
+        <p class="discovery-intro">Reflete sobre:</p>
+        <ul class="discovery-list">
+          <li>O que te dá energia no trabalho</li>
+          <li>Onde tens resultados mais consistentes</li>
+          <li>Como resolves problemas naturalmente</li>
+        </ul>
       </div>
 
-      <p>A ARCUS nasce para apoiar a construção de narrativas profissionais sólidas, elegantes e estratégicas. Esta primeira edição abre caminho para uma série dedicada à tua evolução.</p>
+      <div class="closing-section">
+        <p>
+          A ARCUS nasce para apoiar a construção de narrativas profissionais sólidas, elegantes e estratégicas. Esta primeira edição abre caminho para uma série dedicada à tua evolução.
+        </p>
 
-      <p>Até à próxima edição!<br>
-      ARCUS — Clareza. Direção. Impacto.</p>
+        <p class="closing-message">
+          Até à próxima edição!
+        </p>
 
-      <div style="margin-top:1.5rem;">
-        <a class="btn" href="index.html">Voltar ao Início</a>
+        <p class="closing-slogan">
+          ARCUS — Clareza. Direção. Impacto.
+        </p>
       </div>
-    </section>
-  </main>
+    </article>
+  </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
     ARCUS — onde a tua história encontra a tua próxima oportunidade
   </footer>
-
-  <script>
-    (function(){
-      try {
-        const links = document.querySelectorAll('.nav-links a');
-        links.forEach(a => {
-          const href = a.getAttribute('href');
-          const current = window.location.pathname.split('/').pop() || 'index.html';
-          if (href === current || href === window.location.pathname) {
-            a.classList.add('active');
-          }
-        });
-      } catch (e) { /* silencioso */ }
-    })();
-  </script>
 
 </body>
 </html>
