@@ -379,3 +379,44 @@ blockquote {
     padding: 80px 10%;
   }
 }
+
+/* --- Newsletter / Anchor helpers --- */
+/* smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ajusta o offset da ancoragem para compensar a nav fixa */
+#newsletter {
+  scroll-margin-top: 110px; /* ajustar se a tua nav for mais alta/baixa */
+}
+
+/* pequenas melhorias visuais para a newsletter */
+.newsletter-sub {
+  color: #e8dfff;
+  margin-bottom: 12px;
+}
+
+.newsletter-list {
+  margin: 12px 0 0 18px;
+  color: #e8c6ff;
+  line-height: 1.6;
+}
+.newsletter-list li {
+  margin-bottom: 10px;
+}
+
+/* Responsivo: garantir espaço quando a nav cobre mais espaço */
+@media (max-width: 768px) {
+  #newsletter {
+    scroll-margin-top: 80px;
+  }
+}
+
+/* site slogan under hero */
+.site-slogan {
+  color: #e8dfff;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 12px;
+}
